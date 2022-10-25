@@ -33,7 +33,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url('./imagens/espaço.jpeg');
+  background-image: url('espaço.jpeg');
 }
 #estilo{
   display: flex;
