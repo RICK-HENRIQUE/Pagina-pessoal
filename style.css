@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+  color: white;
+}
+p{
+  color: white;
+  font-size: 20px;
+  text-align: justify;
+  
+}
+
+.profile-img {
+  
+  width: 120px;
+  border-radius: 45px;
+  border: #474747 5px solid;
+  box-shadow: rgba(255, 255, 255, 0.74) 0px 5px 10px;
+  transform: translateY(-65px);
+  position: relative;
+  margin: 40px;;
+  
+}
+#imgp{
+  display:flex;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('./imagens/espaço.jpeg');
+}
+#estilo{
+  display: flex;
+}
+
+.container {
+  width: 1150px;
+  padding: 20px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  
+}
+
+.container .card {
+  position: relative;
+  padding: 10px;
+  width: 300px;
+  background-color: #fff;
+  margin: 28px;
+  border: 1px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+  text-align: center;
+  
+  
+}
+
+.container .card img {
+  transition: 0.5s;
+}
+
+.container .card h1 {
+  font-size: 2rem;
+}
+
+.container .card .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.container .card .content p {
+  color: #666;
+  transition: 0.5s;
+}
+
+.container .card .content a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: 0.5s;
+  outline: none;
+  margin-top: 20px;
+}
+
+.container .card:hover {
+  background-color: #dc2e69;
+  color: white;
+  margin-top: -5px;
+  box-shadow: 2px 20px 25px #dc2e685d;
+  border-color: #dc2e69;
+}
+
+.container .card:hover img {
+  filter: invert(1);
+}
+
+.container .card:hover .content p {
+  color: white;
+}
+
+.container .card:hover .content a{
+  color:black;
+  background-color: white;
+}
+#click{
+  margin-top: -5px;
+}
+@media (max-width:1100px){
+  #estilo{
+    display: block;
+  }
+  .container .card{
+    margin: 15px;
+  }
+}
